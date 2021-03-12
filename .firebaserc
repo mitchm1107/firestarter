@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "firestarter-e49c8": {
+      "hosting": {
+        "firestarter": [
+          "firestarter-e49c8"
+        ]
+      }
+    }
+  }
+}
