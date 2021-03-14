@@ -7,10 +7,10 @@ import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-detail-page',
-  templateUrl: './details-page.component.html',
-  styleUrls: ['./details-page.component.scss'],
+  templateUrl: './detail-page.component.html',
+  styleUrls: ['./detail-page.component.scss'],
 })
-export class DetailsPageComponent implements OnInit {
+export class DetailPageComponent implements OnInit {
   customerId: string;
   customer: Observable<any>;
 

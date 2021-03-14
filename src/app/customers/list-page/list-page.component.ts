@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SeoService } from 'src/app/services/seo.service';
 import { AngularFirestore } from '@angular/fire/firestore';
-import { tap } from 'rxjs/operators';
-import { MatNavList } from '@angular/material/';
+
 @Component({
   selector: 'app-list-page',
   templateUrl: './list-page.component.html',
@@ -19,6 +18,8 @@ export class ListPageComponent implements OnInit {
       description: 'A list filled with customers',
     });
 
-    // this.customers = this.db.collection('customers').valueChanges({ idField: 'id' });
+    this.customers = this.db
+      .collection('customers')
+      .valueChanges({ idField: 'id' });
   }
 }
